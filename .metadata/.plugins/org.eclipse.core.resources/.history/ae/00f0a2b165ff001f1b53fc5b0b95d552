@@ -1,0 +1,19 @@
+package package1;
+import java.util.*;
+
+public class BusDemo {
+
+	public static void main(String[] args) {
+		int opt=1;
+		Scanner sc = new scanner (System.in);
+		while(opt==1) {
+			System.out.println("Enter 1 to continuie and 2 to exit... ");
+			opt=sc.nextInt();
+			if(opt==1) {
+				System.out.println("Booking....");
+			}
+		}
+		
+	}
+
+}

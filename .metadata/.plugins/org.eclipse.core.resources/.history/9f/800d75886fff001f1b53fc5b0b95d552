@@ -1,0 +1,22 @@
+package package1;
+
+public class Bus {
+	private int BusNo;
+	private boolean Ac;
+	private int Capacity;
+}
+
+Bus(int BusNo, boolean Ac, int Capacity){
+	this.BusNo = BusNo;
+	this.Ac = Ac;
+	this.Capacity = Capacity;
+}
+
+public void getCapacity() {
+	return Capacity;
+}
+
+public void setCapacity(int cap) {
+	Capacity = cap;
+}
+

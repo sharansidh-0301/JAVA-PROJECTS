@@ -1,0 +1,37 @@
+package package1;
+import java.util.*;
+
+public class BusDemo {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Bus> buses = new ArrayList<Bus>();
+		ArrayList<Booking> bookings = new ArrayList<Booking>();
+		
+		buses.add(new Bus(1,true,5));
+		buses.add(new Bus(2,false,50));
+		buses.add(new Bus(3,true,45));
+		
+		for(Bus b:buses) {
+			b.displayBus();
+		}
+		
+		int opt=1;
+		Scanner sc = new Scanner (System.in);
+		while(opt==1) {
+			System.out.println("Enter 1 to continuie and 2 to exit... ");
+			opt=sc.nextInt();
+			if(opt==1) {
+				Booking booking=new Booking();
+				if(booking.isAvailable(bookings, buses)) {
+					System.out.println("Your Booking is successful...");
+				}
+				else
+						System.out.println("Sorry!! Bus is Full. Please Try another Bus or Date");
+				
+			}
+		}
+		
+	}
+
+}
